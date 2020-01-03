@@ -1,0 +1,118 @@
+.twitter-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-top: 1px solid #e2e2e2;
+
+    &:last-of-type {
+        border-bottom: 1px solid #e2e2e2;
+    }
+
+    .profile-image {
+        margin: 0;
+        display: flex;
+        float: left;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        overflow: hidden;
+    }
+
+    .body-content {
+        width: calc(100% - 60px);
+        .content {
+            .info {
+                .info-title {
+                    display: flex;
+                    font-size: 14px;
+                    color: #8f8f8f;
+
+                    .info-name {
+                        font-weight: bold;
+                        color: #000;
+                        letter-spacing: 1px;
+                        margin-right: 5px;
+                    }
+
+                    a {
+                        color: inherit;
+                    }
+
+                    .middot {
+                        padding: 0 2.5px;
+                        position: relative;
+                        top: 2px;
+                    }
+                }
+                .info-content {
+                    margin: 0;
+                    font-size: 14px;
+                }
+            }
+
+            .share-link {
+                margin-top: 10px;
+                border: 1px solid #e2e2e2;
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+                color: inherit;
+                .body-image {
+                    margin: 0;
+                    width: 100%;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .body-info {
+                    padding: 10px 15px;
+                    .share-title {
+                        margin: 0;
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+                    .share-desc {
+                        margin: 0;
+                        font-size: 13px;
+                    }
+                    .share-website {
+                        margin: 0;
+                        font-size: 14px;
+                        color: #a3a3a3;
+                    }
+                }
+            }
+        }
+
+        .footer {
+            .share-comment-actions {
+                list-style: none;
+                display: flex;
+                margin: 20px 0 0;
+                padding: 0;
+                .share-comment-action {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 75px;
+                    .share-comment-icon {
+                        height: 15px;
+                        width: auto;
+                        margin: 0;
+                        img {
+                            height: 100%;
+                            width: auto;
+                        }
+                    }
+                    .share-comment-count {
+                        margin-left: 10px;
+                        font-size: 12px;
+                        height: 15px;
+                        line-height: 7.5px;
+                    }
+                }
+            }
+        }
+    }
+}
