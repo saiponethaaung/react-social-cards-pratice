@@ -30,10 +30,10 @@ export default class TwitterCard extends React.Component<{ tweet: TwitterTweet }
                     </div>
                     <div className="footer">
                         <ul className="share-comment-actions">
-                            <TwitterShareComment icon="/icons/twitter/comment.png" hasCount={true} count={tweet.comment} />
-                            <TwitterShareComment icon="/icons/twitter/tweet.png" hasCount={true} count={tweet.retweet} />
-                            <TwitterShareComment icon="/icons/twitter/react.png" hasCount={true} count={tweet.react} />
-                            <TwitterShareComment icon="/icons/twitter/share.png" hasCount={false} count={0} />
+                            <TwitterShareComment icon="/icons/twitter/comment.png" hasCount={true} count={tweet.comment} customClass="comment" />
+                            <TwitterShareComment icon="/icons/twitter/tweet.png" hasCount={true} count={tweet.retweet} customClass="retweet" />
+                            <TwitterShareComment icon="/icons/twitter/react.png" hasCount={true} count={tweet.react} customClass="react" />
+                            <TwitterShareComment icon="/icons/twitter/share.png" hasCount={false} count={0} customClass="share" />
                         </ul>
                     </div>
                 </div>

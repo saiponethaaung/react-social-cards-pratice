@@ -94,12 +94,17 @@
                 .share-comment-action {
                     display: flex;
                     align-items: center;
-                    justify-content: center;
-                    width: 75px;
+                    justify-content: flex-start;
+                    cursor: pointer;
+                    padding-right: 30px;
                     .share-comment-icon {
                         height: 15px;
                         width: auto;
                         margin: 0;
+                        padding: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
                         img {
                             height: 100%;
                             width: auto;
@@ -109,7 +114,14 @@
                         margin-left: 10px;
                         font-size: 12px;
                         height: 15px;
-                        line-height: 7.5px;
+                        line-height: 15px;
+                        font-weight: bold;
+                    }
+                    &.retweet {
+                        color: #4eae38;
+                    }
+                    &.react {
+                        color: #bf3636;
                     }
                 }
             }
